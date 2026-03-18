@@ -11,7 +11,7 @@
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.TextBox textBoxTime;
         private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonDelate;
         private System.Windows.Forms.Label labelList;
         private System.Windows.Forms.ListBox listBoxMeetings;
         private System.Windows.Forms.Button buttonFind;
@@ -35,7 +35,7 @@
             labelTime = new Label();
             textBoxTime = new TextBox();
             buttonAdd = new Button();
-            buttonClear = new Button();
+            buttonDelate = new Button();
             labelList = new Label();
             listBoxMeetings = new ListBox();
             buttonFind = new Button();
@@ -87,7 +87,6 @@
             // 
             // buttonAdd
             // 
-
             buttonAdd.FlatStyle = FlatStyle.Flat;
             buttonAdd.Font = new Font("Arial", 10F, FontStyle.Bold);
             buttonAdd.Location = new Point(280, 100);
@@ -98,18 +97,17 @@
             buttonAdd.UseVisualStyleBackColor = false;
             buttonAdd.Click += buttonAdd_Click;
             // 
-            // buttonClear
+            // buttonDelate
             // 
-
-            buttonClear.FlatStyle = FlatStyle.Flat;
-            buttonClear.Font = new Font("Arial", 9F);
-            buttonClear.Location = new Point(440, 100);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(80, 35);
-            buttonClear.TabIndex = 6;
-            buttonClear.Text = "Очистить";
-            buttonClear.UseVisualStyleBackColor = false;
-            buttonClear.Click += buttonClear_Click;
+            buttonDelate.FlatStyle = FlatStyle.Flat;
+            buttonDelate.Font = new Font("Arial", 9F);
+            buttonDelate.Location = new Point(440, 100);
+            buttonDelate.Name = "buttonDelate";
+            buttonDelate.Size = new Size(80, 35);
+            buttonDelate.TabIndex = 6;
+            buttonDelate.Text = " Удалить";
+            buttonDelate.UseVisualStyleBackColor = false;
+            buttonDelate.Click += buttonDelate_Click;
             // 
             // labelList
             // 
@@ -122,7 +120,6 @@
             // 
             // listBoxMeetings
             // 
-
             listBoxMeetings.BorderStyle = BorderStyle.FixedSingle;
             listBoxMeetings.Font = new Font("Courier New", 10F);
             listBoxMeetings.Location = new Point(30, 173);
@@ -132,10 +129,8 @@
             // 
             // buttonFind
             // 
-
             buttonFind.FlatStyle = FlatStyle.Flat;
             buttonFind.Font = new Font("Arial", 11F, FontStyle.Bold);
-
             buttonFind.Location = new Point(30, 340);
             buttonFind.Name = "buttonFind";
             buttonFind.Size = new Size(500, 40);
@@ -155,10 +150,8 @@
             // 
             // labelResult
             // 
-
             labelResult.BorderStyle = BorderStyle.FixedSingle;
             labelResult.Font = new Font("Arial", 12F, FontStyle.Bold);
-
             labelResult.Location = new Point(30, 415);
             labelResult.Name = "labelResult";
             labelResult.Size = new Size(500, 40);
@@ -168,7 +161,6 @@
             // 
             // Form1
             // 
-
             ClientSize = new Size(580, 480);
             Controls.Add(labelTitle);
             Controls.Add(labelName);
@@ -176,7 +168,7 @@
             Controls.Add(labelTime);
             Controls.Add(textBoxTime);
             Controls.Add(buttonAdd);
-            Controls.Add(buttonClear);
+            Controls.Add(buttonDelate);
             Controls.Add(labelList);
             Controls.Add(listBoxMeetings);
             Controls.Add(buttonFind);
